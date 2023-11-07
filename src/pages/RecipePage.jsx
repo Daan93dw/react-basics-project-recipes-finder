@@ -65,8 +65,19 @@ export const RecipePage = ({ clickFn, selectedRecipe }) => {
           {/* LEFT SECTION OF THE PAGE */}
           <Box w={{ base: "100%", md: "50%" }} my={{ base: 1, md: 4 }}>
             <Heading {...hStyle.h1}>{recipeName}</Heading>
-            <Text color={"gray.600"}>Cooking time: {cookTime} </Text>
-            <Text color={"gray.600"}>Servings: {servings}</Text>
+            <Text color={"gray.600"} fontWeight={"semibold"}>
+              Cooking time:
+              <Text as={"span"} fontWeight={"normal"}>
+                {" "}
+                {cookTime}
+              </Text>
+            </Text>
+            <Text color={"gray.600"} fontWeight={"semibold"}>
+              Servings:{" "}
+              <Text as={"span"} fontWeight={"normal"}>
+                {servings}
+              </Text>
+            </Text>
             <RecipePageIngredients recipe={recipe} h2={hStyle.h2} />
           </Box>
           {/* RIGHT SECTION OF THE PAGE */}
