@@ -19,14 +19,15 @@ export const RecipePage = ({ clickFn, selectedRecipe }) => {
   // Styles
   const headerStyles = {
     color: "gray.600",
-    mt: "1em",
+    bg: "white",
+    borderRadius: "15px 5px",
+    mt: 4,
     mb: ".5em",
-    px: "10px",
-    borderLeft: "4px solid darkolivegreen ",
-    transition: "200ms",
+    p: "10px",
+    border: "2px solid darkolivegreen ",
+    transition: "300ms",
     _hover: {
-      px: "12px",
-      borderLeft: "10px solid orange",
+      border: "2px solid orange",
     },
   };
 
@@ -34,6 +35,7 @@ export const RecipePage = ({ clickFn, selectedRecipe }) => {
     h1: {
       ...headerStyles,
       size: "lg",
+      as: "h1",
     },
     h2: {
       ...headerStyles,

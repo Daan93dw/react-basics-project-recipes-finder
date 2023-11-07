@@ -13,7 +13,7 @@ export const RecipePageNutrients = ({ recipe, h3 }) => {
   // Component Output
   return (
     <>
-      <Heading as={"h3"} size={"sm"} {...h3}>
+      <Heading as={"h3"} size={"sm"} {...h3} mb={5}>
         Total Nutrients:
       </Heading>
       <UnorderedList
