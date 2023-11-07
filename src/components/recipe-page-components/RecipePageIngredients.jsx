@@ -1,5 +1,5 @@
 // Imports
-import { Heading, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Heading, ListItem, UnorderedList } from "@chakra-ui/react";
 
 export const RecipePageIngredients = ({ recipe, h2 }) => {
   // Component Output

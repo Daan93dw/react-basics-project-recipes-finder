@@ -22,6 +22,22 @@ export const RecipeCard = ({ recipe }) => {
     recipe.toLowerCase().includes("veg")
   );
 
+  console.log(mealType[0]);
+
+  const getCardBG = () => {
+    if (mealType.length <= 1) {
+      switch (mealType[0]) {
+        case "BREAKFAST":
+          return "darkblue";
+        case "SNACK":
+          return "darkred";
+        default:
+          return "darkolivegreen";
+      }
+    }
+    return "gray";
+  };
+
   //Styles
   const tagStyles = {
     size: "md",
@@ -74,13 +90,13 @@ export const RecipeCard = ({ recipe }) => {
       </CardBody>
 
       <CardFooter
-        bg={"darkolivegreen"}
+        bg={getCardBG}
         borderRadius={"0px 0px 15px 15px"}
         justifyContent={"center"}
         color={"whiteAlpha.900"}
         fontWeight={"semibold"}
       >
-        <Text>{mealType}</Text>
+        <Text>{mealType && mealType.join(" ")}</Text>
       </CardFooter>
     </Card>
   );
