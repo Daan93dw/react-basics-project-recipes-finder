@@ -344,12 +344,12 @@ export const data = JSON.parse(`{
           "Sulfites"
         ],
         "ingredientLines": [
-          "* 8 pork chops",
-          "* 1/2 cup sugar free ketchup",
-          "* 1/3 cup Seasoned Rice Vinegar, original",
-          "* 1/3 cup Swerve Brown Sweetener",
-          "* 1 Tablespoon ground cumin",
-          "* 1 teaspoons chipotle chili powder"
+          "8 pork chops",
+          "1/2 cup sugar free ketchup",
+          "1/3 cup Seasoned Rice Vinegar, original",
+          "1/3 cup Swerve Brown Sweetener",
+          "1 Tablespoon ground cumin",
+          "1 teaspoons chipotle chili powder"
         ],
         "ingredients": [
           {
@@ -4241,12 +4241,12 @@ export const data = JSON.parse(`{
         ],
         "cautions": [],
         "ingredientLines": [
-          "* 4 egg",
-          "* 2 cup milk",
-          "* 3/4 cup flour",
-          "* 1 tbl sugar",
-          "* pinch of salt",
-          "* 2 tbl melted butter"
+          "4 egg",
+          "2 cup milk",
+          "3/4 cup flour",
+          "1 tbl sugar",
+          "pinch of salt",
+          "2 tbl melted butter"
         ],
         "ingredients": [
           {

@@ -18,23 +18,33 @@ export const RecipePageLabels = ({ recipe, h3 }) => {
   // Component Output
   return (
     <>
-      <Heading as={"h3"} size={"sm"} {...h3}>
-        Health Labels:
-      </Heading>
-      {healthLabels && (
-        <TagLister array={healthLabels} colorScheme="green" {...tagStyles} />
+      {healthLabels.length != 0 && (
+        <>
+          <Heading as={"h3"} size={"sm"} {...h3}>
+            Health Labels:
+          </Heading>
+
+          <TagLister array={healthLabels} colorScheme="green" {...tagStyles} />
+        </>
       )}
-      <Heading as={"h3"} size={"sm"} {...h3}>
-        Diet:
-      </Heading>
-      {dietLabels && (
-        <TagLister array={dietLabels} colorScheme="purple" {...tagStyles} />
+
+      {dietLabels.length != 0 && (
+        <>
+          <Heading as={"h3"} size={"sm"} {...h3}>
+            Diet:
+          </Heading>
+          <TagLister array={dietLabels} colorScheme="purple" {...tagStyles} />
+        </>
       )}
-      <Heading as={"h3"} size={"sm"} {...h3}>
-        Cautions:
-      </Heading>
-      {cautions && (
-        <TagLister array={cautions} colorScheme="red" {...tagStyles} />
+
+      {cautions.length != 0 && (
+        <>
+          <Heading as={"h3"} size={"sm"} {...h3}>
+            Cautions:
+          </Heading>
+
+          <TagLister array={cautions} colorScheme="red" {...tagStyles} />
+        </>
       )}
     </>
   );
